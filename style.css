@@ -1,0 +1,204 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    background: white;
+    width: 850px;  /* Fixe la largeur */
+    height: 500px; /* Fixe la hauteur */
+    position: relative;
+}
+
+.left-column {
+    width: 350px; /* Fixe la largeur de la colonne gauche */
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    z-index: 2;
+    background-color: #dddbdb;
+}
+
+.right-column {
+    flex: 1;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+/* Carré bleu et texte à gauche */
+.header-text {
+    position: absolute;
+    top: -30px; /* Ajuste la position */
+    left: 10px; /* Ajuste la position */
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.25em;
+    color: black;
+}
+
+.header-text::before {
+    content: "";
+    width: 12px; /* Taille du carré */
+    height: 12px;
+    background-color: #007BFF; /* Couleur bleue */
+    margin-right: 10px; /* Espace entre le carré et le texte */
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 40px;
+}
+
+.background-box {
+    position: absolute;
+    top: 50px;
+    left: -1px;
+    width: 600px; /* Ajuste la largeur */
+    height: 700px; /* Ajuste la hauteur */
+    background-color: #e6d8c8d5;
+    z-index: 0;
+}
+
+/* Suppression de règles de mise en page flexibles */
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.left-column {
+    width: 350px; /* Fixe la largeur de la colonne gauche */
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    z-index: 2;
+    background-color: rgba(241, 216, 182, 0.625);
+}
+
+/* Déplacer le texte dans la colonne droite */
+.right-column h2, .right-column p {
+    position: relative;
+    left: 125px;  /* Décale le texte vers la gauche */
+    top: 140px;    /* Ajuste le texte si nécessaire */
+    font-size: 1.5em;  /* Augmente la taille du texte */
+    font-family: 'Roboto', sans-serif;  /* Changer la police */
+}
+
+/* Bouton avec carré bleu et texte "CV" */
+.btn {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    position: absolute; /* Pour positionner le bouton de façon précise */
+    top: 290px; /* Ajuste pour déplacer vers le bas */
+    right: 240px; /* Ajuste pour déplacer vers la gauche ou la droite */
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+/* Barre bleue sous le nom */
+.blue-bar {
+    width: 50%; /* La barre prend 50% de la largeur de la colonne */
+    height: 2px; /* Hauteur de la barre (fine) */
+    background-color: #007BFF; /* Couleur bleue */
+    margin-top: 10px; /* Un peu d'espace entre le nom et la barre */
+    margin-left: auto; /* Centrer la barre horizontalement */
+    margin-right: auto; /* Centrer la barre horizontalement */
+}
+
+/* Icônes des réseaux sociaux */
+.social-icons {
+    margin-top: 165px; /* Espace entre la barre bleue et les icônes */
+    text-align: center; /* Centrer les icônes */
+}
+
+.social-icon {
+    font-size: 25px; /* Taille des icônes */
+    margin: 0 15px; /* Espace entre les icônes */
+    color: #000000; /* Couleur des icônes bleue */
+    text-decoration: none; /* Retirer le soulignement */
+}
+
+.social-icon:hover {
+    color: #090202; /* Couleur plus foncée au survol */
+}
+
+/* Barre bleue sous le nom */
+.blue-bar {
+    height: 2px;  /* Hauteur de la barre bleue */
+    background-color: #007BFF; /* Couleur de la barre bleue */
+    margin-top: 20px; /* Déplace la barre bleue vers le bas */
+    width: 50%; /* Longueur de la barre bleue (ajustez si nécessaire) */
+    margin-left: auto;  /* Centre la barre bleu horizontalement */
+    margin-right: auto; /* Centre la barre bleu horizontalement */
+}
+
+/* Icônes des réseaux sociaux */
+.social-icons {
+    margin-top: 40px;  /* Espacement entre la barre bleue et les icônes */
+    text-align: center;  /* Centrer les icônes */
+}
+
+/* Style des icônes individuelles */
+.social-icon {
+    display: inline-block;  /* Les icônes s'affichent en ligne */
+    background-color: white;  /* Fond blanc pour chaque icône */
+    border-radius: 50%;  /* Pour rendre l'élément circulaire */
+    padding: 10px;  /* Réduit la taille du cercle autour des icônes */
+    margin: 0 10px;  /* Espacement entre chaque icône */
+    transition: transform 0.3s ease;  /* Transition douce quand on survole */
+}
+
+.social-icon i {
+    font-size: 20px;  /* Taille réduite des icônes */
+    color: #007BFF;  /* Couleur bleue pour les icônes */
+}
+
+.social-icon:hover {
+    transform: scale(1.1);  /* Agrandir légèrement l'icône au survol */
+}
+
+/* Style pour rendre "Community Manager" non gras */
+.not-bold {
+    font-weight: normal; /* Retire le gras */
+}
+
+.community-manager {
+    font-weight: normal;  /* Enlève le gras pour "Community Manager" */
+}
